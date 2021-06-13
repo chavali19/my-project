@@ -92,7 +92,8 @@ div {
     function display()
     {
       var getamount=document.getElementById("amount").value;
-      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount;
+      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to"+document.getElementById("names");
+      return false;
     }
   </script>
 
