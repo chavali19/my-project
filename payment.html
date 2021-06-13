@@ -48,6 +48,21 @@ body {
    font-size: 20px;
    
   }
+  .button {
+   background-color: #8FBC8F;
+   border-radius: 5px;
+   color: white;
+   padding: 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin-top: 20px;
+   margin-left: 80px;
+   border: 2px solid black;
+   cursor: pointer;
+}
+  
 p{
   color: white;
   font-family: Times New Roman;
@@ -75,13 +90,13 @@ div {
       <option value="suresh">Suresh</option>
       <option value="Ramesh">Ramesh</option>
       <option value="Vamsi">Vamsi</option>
-      <option value="lohith">Lohith</option>
-      <option value="pawan">Pawan</option>
-      <option value="kiran">Kiran</option>
-      <option value="syam">Syam</option>
-      <option value="hemanth">Hemanth</option>
-      <option value="store">Kirana Store</option>
-      <option value="Noodles">Noodles centre</option>
+      <option value="Lohith">Lohith</option>
+      <option value="Pawan">Pawan</option>
+      <option value="Kiran">Kiran</option>
+      <option value="Syam">Syam</option>
+      <option value="Hemanth">Hemanth</option>
+      <option value="Kirana Store">Kirana Store</option>
+      <option value="Noodles Centre">Noodles centre</option>
     </select>
     <label for="amount">AMOUNT : </label>
     <input type="text" id="amount" name="amount" placeholder="Enter your amount...">
@@ -93,7 +108,12 @@ div {
     function display()
     {
       var getamount=document.getElementById("amount").value;
-      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to"+document.getElementById("names").value;
+      var myamount=document.getElementById("myAccountBalance").value;
+      var finalamount=myamount-getamount;
+      if(getamount>myamount)
+       document.getElementById("result").innerHTML="Transaction is Invalid";
+      else
+      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to"+document.getElementById("names").value+" <br> Your Account Balance is"+finalamount;
       return false;
     }
   </script>
