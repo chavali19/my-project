@@ -36,14 +36,11 @@ body {
  #submit{
    /* Fill the attributes and values */
    color: #FFFFFF;
-   background-color: #00ccff;
-   margin-right: auto;
-   margin-left: auto;
+   background-color: green;
    padding: 5px;
-   width: 50%;
-   font-family: Verdana;
+   width:10%;
    font-weight: bold;
-   border-radius: 6px;
+   border-radius: 1px;
   }
   #result{
    /* Fill the attributes and values */
@@ -74,6 +71,7 @@ div {
   <form onsubmit="return display()">
     <label for="names">USER : </label>
     <select id="names" name="names">
+      <option value="User Name...">User Name...</option>
       <option value="suresh">Suresh</option>
       <option value="Ramesh">Ramesh</option>
       <option value="Vamsi">Vamsi</option>
@@ -95,10 +93,10 @@ div {
     function display()
     {
       var getamount=document.getElementById("amount").value;
-      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to"+document.getElementById("names");
+      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to"+document.getElementById("names").value;
       return false;
     }
   </script>
-
+<a href="https://chavali19.github.io/my-project/endpage.html" class="button">Exit</a>
     </body>
 </html>
