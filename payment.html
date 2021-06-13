@@ -109,11 +109,13 @@ div {
     {
       var getamount=document.getElementById("amount").value;
       var myamount=document.getElementById("myAccountBalance").value;
-      var finalamount=myamount-getamount;
+      var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
       if(getamount>myamount)
        document.getElementById("result").innerHTML="Transaction is Invalid";
-      else
-      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to"+document.getElementById("names").value+" <br> Your Account Balance is"+finalamount;
+      else{
+      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to"+document.getElementById("names").value+" <br> Your Account Balance is"+myAccountBalance;
+       document.getElementById("myAccountBalance").innerText = myAccountBalance;
+      }
       return false;
     }
   </script>
