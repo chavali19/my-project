@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Bank </title>
+<link rel="stylesheet" href="assets/customer.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+
+h1 {
+  color: blue;
+  font-family: Times New Roman;
+  font-size: 50px;
+  border-bottom: 4px solid orange;
+  border-radius: 10px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.body {
+  background-image: url("C:/Users/sujit/OneDrive/Desktop/sparkintern/bankback.jpg");
+  background-size: 1600px 550px;
+}
+
+.button {
+   background-color: darkorange;
+   border-radius: 5px;
+   color: white;
+   padding: 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin-top: 20px;
+   margin-left: 80px;
+   border: 2px solid black;
+   cursor: pointer;
+}
+h2{
+   margin-top: 200px;
+   margin-left: 500px;
+   color: blue;
+   font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>WELCOME TO CSK BANK</h1>
+
+<a href="https://saiprakash95666.github.io/customers.html" class="button">Customers List</a>
+<a href="https://saiprakash95666.github.io/datatable.html" class="button">Transaction History</a>
+
+<h2>-Chavali Sujith</h2>
+</body>
+</html>
