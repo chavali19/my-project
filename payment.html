@@ -108,11 +108,11 @@ div {
     function display()
     {
       var getamount=document.getElementById("amount").value;
-      var myamount=parseInt(document.getElementById("myAccountBalance").value);
+     
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
-      if(getamount>myamount)
+      if(getamount>17000)
       {
-       document.getElementById("result").innerHTML="Transaction is Invalid";
+      alert("Insufficient Balance.");
       }
       else{
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
