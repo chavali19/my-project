@@ -96,7 +96,7 @@ div {
                     </button>
                 </div>
                 <div class="modal-body">
-                    <ol id="transaction-history-body">
+                    <ol id="transaction-body">
 
                     </ol>
                 </div>
@@ -153,7 +153,7 @@ div {
        var createPTag = document.createElement("li");
       var textNode = document.createTextNode(`${getamount} is sent to recepient with Email-id ${document.getElementById("names").value}@email.com on ${Date()}.`);
       createPTag.appendChild(textNode);
-      var element = document.getElementById("transaction-history-body");
+      var element = document.getElementById("transaction-body");
       element.insertBefore(createPTag, element.firstChild);
       return false;
     }
