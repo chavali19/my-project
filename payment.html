@@ -150,7 +150,7 @@ div {
       }
       
       
-       var createPTag = document.createElement("li");
+       var createPTag = document.createElement("ol");
       var textNode = document.createTextNode(`${getamount} is sent to recepient with Email-id ${document.getElementById("names").value}@email.com on ${Date()}.`);
       createPTag.appendChild(textNode);
       var element = document.getElementById("transaction-history-body");
