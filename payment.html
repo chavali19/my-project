@@ -85,18 +85,18 @@ div {
 </style>
 </head>
 <body> 
- <div class="modal fade" id="historytransaction" tabindex="-1" role="dialog" aria-labelledby="exampleModal"
+ <div class="modal fade" id="Transactionhistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModal">Transaction History</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <ol id="transaction-body">
+                    <ol id="transaction-history-body">
 
                     </ol>
                 </div>
@@ -153,13 +153,13 @@ div {
        var createPTag = document.createElement("li");
       var textNode = document.createTextNode(`${getamount} is sent to recepient with Email-id ${document.getElementById("names").value}@email.com on ${Date()}.`);
       createPTag.appendChild(textNode);
-      var element = document.getElementById("transaction-body");
+      var element = document.getElementById("transaction-history-body");
       element.insertBefore(createPTag, element.firstChild);
       return false;
     }
   </script>
 <a href="https://chavali19.github.io/my-project/endpage.html" class="button">Exit</a>
-  <a class="btn btn-info" href="" data-toggle="modal" data-target="#historytransaction">Transaction History</a>
+  <a class="btn btn-info" href="" data-toggle="modal" data-target="#Transactionhistory">Transaction History</a>
    
     </body>
 </html>
