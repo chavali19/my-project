@@ -118,6 +118,13 @@ div {
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
        document.getElementById("myAccountBalance").innerText = myAccountBalance;
       }
+      
+      
+       var createPTag = document.createElement("li");
+      var textNode = document.createTextNode(`${getamount} is sent to recepient with Email-id ${document.getElementById("names").value}@email.com on ${Date()}.`);
+      createPTag.appendChild(textNode);
+      var element = document.getElementById("transaction-history-body");
+      element.insertBefore(createPTag, element.firstChild);
       return false;
     }
   </script>
