@@ -1,26 +1,23 @@
-let myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText);
-
-function MoneyTransaction(){
-   var enterName = document.getElementById("names").value;
-   var enterAmount = parseInt(document.getElementById("amount").value);
-
-   if (enterAmount > 17000) {
-      alert("Insufficient Balance.")
-   } else {
-      var findUserBankAccount = enterName + "BankBalance";
-      var finalAmount = parseInt(document.getElementById(findUserBankAccount).innerHTML) + enterAmount;
-      var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - enterAmount
-      document.getElementById("myAccountBalance").innerText = myAccountBalance
-      document.getElementById(findUserBankAccount).innerHTML = finalAmount;
-      alert(`Your Transaction is Successfull!!  
-      ${enterAmount} is sent to ${enterName}@email.com.`)
-
-      // transaction history 
-      var createPTag = document.createElement("li");
-      var textNode = document.createTextNode(`${enterAmount} is sent to recepient with Email-id ${enterName}@email.com on ${Date()}.`);
+ function display()
+    {
+      var getamount=document.getElementById("amount").value;
+     
+      var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
+      if(getamount>17000)
+      {
+      alert("Insufficient Balance.");
+      }
+      else{
+      document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
+       document.getElementById("myAccountBalance").innerText = myAccountBalance;
+           var createPTag = document.createElement("li");
+      var textNode = document.createTextNode(`${getamount} is sent to recepient with Email-id ${document.getElementById("names").value}@email.com on ${Date()}.`);
       createPTag.appendChild(textNode);
       var element = document.getElementById("transaction-history-body");
       element.insertBefore(createPTag, element.firstChild);
-   }
-}
-
+      }
+      
+      
+     
+      return false;
+    }
