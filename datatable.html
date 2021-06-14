@@ -3,17 +3,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Table</title>
-    <link rel="stylesheet"
-        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="https://chavali19.github.io/my-project/customer.css">
-    <link rel="stylesheet" href="https://chavali19.github.io/my-project/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-<style>
+   
 body {
   background-image: url("https://chavali19.github.io/my-project/bankback.jpg");
   background-size: 1600px 1200px;
@@ -43,89 +33,9 @@ h4{
 </head>
 
 <body>
-    <!-- navbar starts here  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">CSK BANK</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+   
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- navbar ends here  -->
-
-    <div class="my-info text-center">
-        <h2>Name: Sujith</h2>
-        <h4>Current Balance: <span id="myAccountBalance">17000</span></h4>
-
-        <button class="btn btn-info" data-toggle="modal" data-target="#sendMoney">Pay now</button>
-        <a class="btn btn-info" href="" data-toggle="modal" data-target="#transactionHistory">Transaction History</a>
-    </div>
-
-    <!-- Modal send money -->
-    <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Pay now</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="input-group mb-3">
-                            <input type="text" id="enterName" class="form-control" placeholder="Recipient's username"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="basic-addon2">@email.com</span>
-                            </div>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount to pay"
-                                aria-label="Amount">
-                        </div>
-
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Pay Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal transaction History-->
-    <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <ol id="transaction-history-body">
-
-                    </ol>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
     <!-- table  -->
     <div class="container">
