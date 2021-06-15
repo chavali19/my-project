@@ -7,7 +7,7 @@
       {
       alert("Insufficient Balance.");
       }
-     else if(isNaN(getamount))
+      if(isNaN(getamount))
      {
       alert("Enter Correct Amount");
      }
