@@ -9,12 +9,7 @@ body{
 }
 
 /* navbar css starts here  */
-.bg-light{
-    background-color:#3CB371!important;
-}
-.bg-info{
-    background-color: #3CB371!important;
-}
+
 
 .navbar-brand{
    font-family: fantasy;
