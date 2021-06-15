@@ -3,10 +3,14 @@
       var getamount=document.getElementById("amount").value;
      
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
-      if(getamount>17000 || isNaN(getamount))      {
-      alert("Insufficient Balance.Enter Valid Amount");
+       if(isNaN(getamount))
+      {
+       alert("Enter Valid Amount.");
       }
-      
+      else if(getamount>17000)      {
+      alert("Insufficient Balance.");
+      }
+     
       else{
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
        document.getElementById("myAccountBalance").innerText = myAccountBalance;
