@@ -1,13 +1,9 @@
  
-   let myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
+   let myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText);
 function display()
     {
-     
-     
-   
-     while(myAccountBalance!=0)
-     {
        var getamount=document.getElementById("amount").value;
+      var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
        if(isNaN(getamount))
       {
        alert("Enter Valid Amount.");
@@ -15,7 +11,10 @@ function display()
      else if(getamount>17000)      {
       alert("Insufficient Balance.");
       }
-     
+     else if(myAccountBalance<0)
+     {
+      alert("Your Account has Zero Rupee");
+     }
       else{
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
        document.getElementById("myAccountBalance").innerText = myAccountBalance;
@@ -26,6 +25,7 @@ function display()
       element.insertBefore(createPTag, element.firstChild);
       }
      }
+    
       
       
      
