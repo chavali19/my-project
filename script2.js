@@ -1,5 +1,4 @@
- 
-   let myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText);
+
 function display()
     {
        var getamount=document.getElementById("amount").value;
@@ -11,7 +10,7 @@ function display()
      else if(getamount>17000)      {
       alert("Insufficient Balance.");
       }
-     else if(myAccountBalance<0)
+     else if(myAccountBalance<=0)
      {
       alert("Your Account has Zero Rupee");
      }
