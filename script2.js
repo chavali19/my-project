@@ -3,8 +3,7 @@
       var getamount=document.getElementById("amount").value;
      
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
-      if(getamount>17000)
-      {
+      if(getamount>17000 || isNaN(getamount))      {
       alert("Insufficient Balance.Enter Valid Amount");
       }
       
