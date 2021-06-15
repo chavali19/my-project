@@ -20,11 +20,11 @@
 <style>
 input[type=text], select {
   width: 100%;
-  padding: 12px 20px;
+  padding: 15px 25px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
 }
 
@@ -37,9 +37,15 @@ h1 {
 }
 h2 {
   color: white;
+    font-family: Times New Roman;
+  font-size: 18px;
+  margin-left: 20px;
 }
   h4 {
   color: white;
+      font-family: Times New Roman;
+  font-size: 18px;
+  margin-left: 20px;
 }
 body {
   background-image: url("https://chavali19.github.io/my-project/bankback.jpg");
@@ -57,21 +63,23 @@ body {
   }
   #result{
    /* Fill the attributes and values */
-   color: #FF6347;
+   color:#3B2F2F;
    font-size: 20px;
+      font-weight: bold;
+     font-family:"Times New Roman", Times, serif;
    
   }
   .button {
-   background-color: #8FBC8F;
+   background-color:#0AFFFF;
    border-radius: 5px;
    color: white;
    padding: 16px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
-   font-size: 20px;
-   margin-top: 20px;
-   margin-left: 80px;
+   font-size: 30px;
+   margin-top: 30px;
+   margin-left: 100px;
    border: 2px solid black;
    cursor: pointer;
 }
@@ -83,8 +91,8 @@ p{
   margin-left: 20px;
 }
 div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  border-radius: 10px;
+  background-color: #F87217;
   padding: 20px;
 }
 </style>
@@ -94,11 +102,11 @@ div {
 
 <h1>PAYMENT</h1>
    <h2>Name: Sujith</h2>
-   <h4>Current Balance: <span id="myAccountBalance">17000</span></h4>
+   <h3>Current Balance: <span id="myAccountBalance">17000</span></h3>
 <p>Select the user you want to transfer and the amount.</p>
 <div>
   <form onsubmit="return display()">
-    <label for="names">USER : </label>
+    <label for="names">USER Name: </label>
     <select id="names" name="names">
       <option value="User Name...">User Name...</option>
       <option value="suresh">Suresh</option>
