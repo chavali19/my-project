@@ -3,12 +3,16 @@ function display()
     {
        var getamount=document.getElementById("amount").value;
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
+    if (myAccountBalance<=0)
+    {
+        alert("Your Account has zero Rupees");
+    }
     
-       if(isNaN(getamount))
+      else if(isNaN(getamount))
       {
        alert("Enter Valid Amount.");
       }
-     else if(getamount>=17000)      {
+     else if(getamount>17000)      {
       alert("Insufficient Balance.");
       }
      
@@ -21,6 +25,7 @@ function display()
       var element = document.getElementById("transaction-history-body");
       element.insertBefore(createPTag, element.firstChild);
       }
+    
      
     
       
