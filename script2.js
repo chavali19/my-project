@@ -3,7 +3,10 @@ function display()
     {
        var getamount=document.getElementById("amount").value;
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
-     
+     if(myAccountBalance<=0)
+     {
+         alert("Your Account Shows Zero Balance.");
+     }
        if(isNaN(getamount))
       {
        alert("Enter Valid Amount.");
@@ -21,7 +24,7 @@ function display()
       var element = document.getElementById("transaction-history-body");
       element.insertBefore(createPTag, element.firstChild);
       }
-     }
+     
     
       
       
