@@ -9,7 +9,7 @@
       }
       if(isNaN(getamount))
      {
-      alert("Enter Correct Amount");
+      alert("Enter Valid Amount");
      }
       else{
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
