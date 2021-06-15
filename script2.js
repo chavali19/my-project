@@ -1,10 +1,13 @@
- function display()
+ 
+   let myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
+function display()
     {
-      var getamount=document.getElementById("amount").value;
      
-      var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
+     
+   
      while(myAccountBalance!=0)
      {
+       var getamount=document.getElementById("amount").value;
        if(isNaN(getamount))
       {
        alert("Enter Valid Amount.");
