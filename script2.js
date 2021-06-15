@@ -7,7 +7,7 @@
       {
        alert("Enter Valid Amount.");
       }
-      if(getamount>17000)      {
+     else if(getamount>17000)      {
       alert("Insufficient Balance.");
       }
      
