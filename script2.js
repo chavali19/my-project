@@ -2,11 +2,8 @@
 function display()
     {
        var getamount=document.getElementById("amount").value;
-      var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
-     if(myAccountBalance<=0)
-     {
-         alert("Your Account Shows Zero Balance.");
-     }
+      
+    
        if(isNaN(getamount))
       {
        alert("Enter Valid Amount.");
@@ -17,6 +14,7 @@ function display()
      
       else{
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
+         var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
        document.getElementById("myAccountBalance").innerText = myAccountBalance;
            var createPTag = document.createElement("li");
       var textNode = document.createTextNode(`${getamount} is sent to recepient with Email-id ${document.getElementById("names").value}@email.com on ${Date()}.`);
