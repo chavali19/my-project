@@ -10,20 +10,20 @@ body{
 
 /* navbar css starts here  */
 .bg-light{
-    background-color: #3EB489!important;
+    background-color:#3CB371!important;
 }
 .bg-info{
-    background-color: #7FFFD4!important;
+    background-color: #3CB371!important;
 }
 
 .navbar-brand{
    font-family: fantasy;
     font-size: 1.5rem;
-    color: #5f6368!important;
+    color:#3CB371!important;
 }
 
 .nav-link{
-    color: #5f6368!important;
+    color:#3CB371!important;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
