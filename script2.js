@@ -7,7 +7,7 @@
       {
       alert("Insufficient Balance.");
       }
-      if(isNaN(getamount))
+      if(!(Number.isInteger(getamount)))
      {
       alert("Enter Correct Amount");
      }
