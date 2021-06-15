@@ -5,7 +5,7 @@ function display()
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
     if (myAccountBalance<=0)
     {
-        alert("Your Account has zero Rupees");
+        alert("Your Account will become Zero balance.Please Maintain minimum balance in your Account");
     }
     
       else if(isNaN(getamount))
