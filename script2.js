@@ -8,7 +8,7 @@ function display()
       {
        alert("Enter Valid Amount.");
       }
-     else if(getamount=>17000)      {
+     else if(getamount>=17000)      {
       alert("Insufficient Balance.");
       }
      
