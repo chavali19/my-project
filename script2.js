@@ -7,8 +7,10 @@
       {
       alert("Insufficient Balance.");
       }
-     else if(!isNAN(getamount))
+     else if(isNAN(getamount))
+     {
       alert("Enter valid amount");
+     }
       else{
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
        document.getElementById("myAccountBalance").innerText = myAccountBalance;
