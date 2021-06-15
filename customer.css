@@ -40,3 +40,12 @@ body{
 .btn-info:hover{
     background-color: #008B8B!important;
 }
+.table-info
+{
+    background-color:"#1E90FF"!important;
+    
+}
+.table-light
+{
+   background-color:"#AFEEEE"!important;
+}
