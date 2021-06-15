@@ -11,7 +11,7 @@
      {
       alert("Enter Correct Amount");
      }
-      else if(!isNAN(getamount)){
+      else{
       document.getElementById("result").innerHTML="You have done transaction of amount "+getamount+"to  "+document.getElementById("names").value+" <br> Your Account Balance is   "+myAccountBalance;
        document.getElementById("myAccountBalance").innerText = myAccountBalance;
            var createPTag = document.createElement("li");
