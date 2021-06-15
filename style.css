@@ -10,7 +10,10 @@ body{
 
 /* navbar css starts here  */
 .bg-light{
-    background-color: #f2e9e4!important;
+    background-color: #3EB489!important;
+}
+.bg-info{
+    background-color: #7FFFD4!important;
 }
 
 .navbar-brand{
