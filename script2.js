@@ -3,6 +3,8 @@
       var getamount=document.getElementById("amount").value;
      
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
+     while(myAccountBalance!=0)
+     {
        if(isNaN(getamount))
       {
        alert("Enter Valid Amount.");
@@ -20,6 +22,7 @@
       var element = document.getElementById("transaction-history-body");
       element.insertBefore(createPTag, element.firstChild);
       }
+     }
       
       
      
