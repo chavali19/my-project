@@ -3,10 +3,7 @@ function display()
     {
        var getamount=document.getElementById("amount").value;
       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - getamount;
-         if(myAccountBalance<=0)
-     {
-      alert("Your Account has Zero Rupee");
-     }
+     
        if(isNaN(getamount))
       {
        alert("Enter Valid Amount.");
